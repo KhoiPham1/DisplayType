@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class DisplayType {
+ class DisplayType {
     public static void main(String[] args) {
         int number = 10;
         Scanner input = new Scanner(System.in);
@@ -27,10 +27,21 @@ public class DisplayType {
                 }
             }
             else if (number== 3){
-                
+                for (int i =1;i<6;i++){
+                    for (int j = 6;j>i;j--){
+                        System.out.print(" ");
+                    }
+                    for (int l = 0;l<i;l++){
+                        System.out.print("* ");
+                    }
+                    System.out.println();
+                }
             }
             else if (number==4){
                 System.exit(4);
+            }
+            else {
+                System.out.println("No choice");
             }
 
 
